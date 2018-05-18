@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zly.mapper.CarMapper">
+  <resultMap id="BaseResultMap" type="com.zly.pojo.Car">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="brand" jdbcType="VARCHAR" property="brand" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="p_year" jdbcType="VARCHAR" property="pYear" />
+    <result column="mileage" jdbcType="VARCHAR" property="mileage" />
+    <result column="d_id" jdbcType="INTEGER" property="dId" />
+    <result column="s_id" jdbcType="INTEGER" property="sId" />
+    <result column="price" jdbcType="VARCHAR" property="price" />
+  </resultMap>
+  <resultMap id="BaseResultMap" type="com.zly.pojo.Car">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="brand" jdbcType="VARCHAR" property="brand" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="p_year" jdbcType="VARCHAR" property="pYear" />
+    <result column="mileage" jdbcType="VARCHAR" property="mileage" />
+    <result column="d_id" jdbcType="INTEGER" property="dId" />
+    <result column="s_id" jdbcType="INTEGER" property="sId" />
+    <result column="price" jdbcType="VARCHAR" property="price" />
+  </resultMap>
+</mapper>

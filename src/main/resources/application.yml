@@ -1,0 +1,65 @@
+server:
+  port: 8081
+
+spring:
+  mvc:
+    favicon:
+      enabled: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/db_brp
+    username: root
+    password:
+    druid:
+      stat-view-servlet:
+        allow: true
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+  redis:
+      datasource: 1
+      host: 127.0.0.1
+      port: 6379
+      password:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+        timeout: 0
+mybatis:
+  type-aliases-package: tk.mybatis.springboot.model
+  mapper-locations: classpath:mapper/*.mxl
+
+mapper:
+  mappers: tk.mybatis.springboot.util.MyMapper
+  not-empty: false
+  identity: MYSQL
+
+
+logging:
+  level:
+    org.springframework: warn.
+    com.zly.mapper: DEBUG
+
+logging.level.org.springframework : WARN
+logging.level.com.zly.mapper: DEBUG
+logging.file: classpath:log/spring-boot-logging.log
+management.security.enabled: false
+
+
